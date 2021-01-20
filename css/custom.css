@@ -1,0 +1,82 @@
+.bg-blue {
+    background-color: #03a7f2;
+}
+
+.row-short {
+    text-align: center;
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero img {
+    height: 30px;
+    margin-bottom: 40px;
+}
+.hero h1 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 54px;
+    line-height: 60px;
+}
+.hero p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.hero .clock {
+    margin-bottom: 60px;
+}
+.hero form {
+    margin-bottom: 20px;
+}
+
+.left-column {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+.right-column {
+    display: inline-block;
+    width: 40%;
+    float: right;
+}
+
+main h2 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+main p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #777;
+}
+main p > a {
+    color: #e71e62;
+    text-decoration: none;
+}
+main p > a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .left-column {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .right-column {
+        width: 100%;
+    }
+}
