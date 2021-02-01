@@ -1,10 +1,14 @@
-.bg-blue {
-    background-color: #03a7f2;
+/* common style */
+
+.bg-main-color {
+    background-color: var(--main-color);
 }
 
 .row-short {
     text-align: center;
 }
+
+/* hero section */
 
 .hero {
     min-height: 100vh;
@@ -51,6 +55,8 @@
     float: right;
 }
 
+/* main section */
+
 main h2 {
     display: inline-block;
     width: 100%;
@@ -64,7 +70,7 @@ main p {
     color: #777;
 }
 main p > a {
-    color: #e71e62;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 main p > a:hover {
@@ -78,5 +84,83 @@ main p > a:hover {
     }
     .right-column {
         width: 100%;
+    }
+}
+
+/* footer section */
+footer.container {
+    padding-top: 0;
+}
+
+footer.container .socials {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+footer.container .socials > a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: 2px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+footer.container .socials > a:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+footer img {
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 30px;
+}
+footer .bottom-texts {
+    display: inline-block;
+    width: 100%;
+    color: #fff9;
+}
+footer .bottom-texts > p {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 30px;
+    position: relative;
+}
+footer .bottom-texts > p::before {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(0, -50%);
+}
+footer .bottom-texts > p:first-of-type::before {
+    display: none;
+}
+
+footer .description {
+    display: inline-block;
+    width: 100%;
+    color: #fff9;
+    line-height: 30px;
+}
+footer p > a {
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    footer .bottom-texts > p {
+        width: 100%;
+    }
+    footer .bottom-texts > p::before {
+        display: none;
     }
 }
